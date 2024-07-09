@@ -1,7 +1,12 @@
+import os
 import logging
 from analysis import analyze_frame, create_narration, generate_audio
 from webcam import capture_frame_from_webcam
 from playsound import playsound
+from dotenv import load_dotenv
+
+# Carregar variáveis de ambiente do arquivo .env
+load_dotenv()
 
 # Configurações de logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
